@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0%;
+            margin: 0%;
+            overflow-x: hidden;
+        }
+
+        #top{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+        }
+
+        #top a{
+            padding-left: 4%;
+            padding-top: 2%;
+            color: white;
+        }
+
+        #top img{
+            height: fit-content;
+            width: 5%;
+            padding-left: 2%;
+            padding-right: 70%;
+        }
+
+        #body-space{
+            background-image: linear-gradient(rgba(2, 1, 14, 0.65), rgba(9, 0, 77, 0.65));
+            padding-top: 100px;
+        }
+
+        #header1{
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 10vh;
+            color: rgb(239, 239, 239);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        #myVideo{
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        #body-items{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #body-item1{
+            background-color: #001f3f;
+            color: hsla(210, 100%, 75%, 1.0);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5%;
+            box-sizing: border-box;
+            border: 0px solid black;
+            border-radius: 5px;
+            height: 50vh;
+            width: 50vh;
+            padding: 1.5%;
+            overflow:auto;
+            box-shadow: 12px 12px 13px 0px rgba(0,0,0,0.75);
+        }
+
+        #body-item2{
+            background-color: #0074D9;
+            color: hsla(208, 100%, 85%, 1.0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5%;
+            box-sizing: border-box;
+            border: 0px solid black;
+            border-radius: 5px;
+            height: 50vh;
+            width: 50vh;
+            padding: 1.5%;
+            overflow: auto;
+            box-shadow: 12px 12px 13px 0px rgba(0,0,0,0.75);
+        }
+
+        #body-item3{
+            background-color: #7FDBFF;
+            color: hsla(197, 100%, 20%, 1.0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5%;
+            box-sizing: border-box;
+            border: 0px solid black;
+            border-radius: 5px;
+            height: 50vh;
+            width: 50vh;
+            padding: 1.5%;
+            overflow: auto;
+            box-shadow: 12px 12px 13px 0px rgba(0,0,0,0.75);
+        }
+
+        #body-content{
+            background-color: silver;
+            color: black;
+            margin-left: 5%;
+            margin-top: 1%;
+            margin-bottom: 5%;
+            box-sizing: border-box;
+            border: 0px solid black;
+            border-radius: 5px;
+            min-height: 800px;
+            width: 90%;
+            padding: 2%;
+            overflow: hidden;
+            box-shadow: 5px 12px 13px 0px rgba(0,0,0,0.75);
+        }
+
+        #body-projects{
+            display: flex;
+            flex-direction: row;
+            scroll-behavior: smooth;
+            justify-content: center;
+        }
+
+        .project{
+            flex: 0 0 400px;
+            margin: 5%;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0px;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transition:0.5s;
+            text-align:center;
+        }
+        
+        .project img{
+            display: block;
+            width: 100%;
+            height:80%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .project:hover{
+            transform: translateY(-12px);
+        }
+
+        .body-video{
+            display: flex;
+            flex-direction: row;
+            scroll-behavior: smooth;
+            justify-content: center;
+            margin: 3%;
+            border: 0px solid #ddd;
+            padding: 0;
+        }
+
+        #footer{
+            padding: 2%;
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="top">
+        
+            <img src="logo.png">
+            <a href="website.html">Home</a>
+            <a href="Videos.html">Video</a>
+            <a href="https://en.wikipedia.org/wiki/Water_quality">References</a>
+        
+    </div>
+
+        <div id="header1">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <h1 id="heading1">Water Quality <br> Management</h1>
+
+        </div>
+
+    <div id="body-space">
+
+    <div id="body-items">
+        <div id="body-item1">
+            <p>What is water quality management?</p>
+            <br>
+            <p>Water quality management is the monitoring, controlling, and improvement of water-related processes to ensure that they meet their most urgent use for humans as well as maintaining ecological ecosystems. These include various activities directed at protecting rivers, lakes, groundwater, and coastal areas against pollution, over-extraction, or contamination.</p>
+        </div>
+
+        <div id="body-item2">
+            <p>Purpose of water quality management:-</p>
+            <br>
+            <ul>
+                <li>Working to keep water safe for human use.</li>
+                <li>Managing water resources to ensure availability for present and future generations.</li>
+                <li>Good water quality protects industries such as fisheries, agriculture, and tourism.</li>
+                <li>Proper water management prevents floods by preserving wetlands and natural filters.</li>
+                <li>Sustainable water management strengthens ecosystems and communities' ability to adapt to climate change.</li>
+            </ul>
+        </div>
+
+        <div id="body-item3">
+            <p>Process of water quality management</p>
+            <br>
+            <ul>
+                <li>Collect and analyze water samples.</li>
+                <li>Define water quality rules based on use (drinking, recreation, etc.).</li>
+                <li>Find pollution sources like factories or farms.</li>
+                <li>Evaluate the impact on health and the environment.</li>
+                <li>Apply measures to reduce pollution and restore water.</li>
+                <li>Educate and involve the community.</li>
+                <li>Regularly check water to ensure quality.</li>
+                <li>Share results and ensure laws are followed.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 align="center" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Articles on Water quality management</h1>
+
+    <div id="body-content">
+        <iframe src="https://www.iwra.org/waterquality/" width="100%" height="800px"></iframe>
+    </div>
+
+    <h1 align="center" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Some Projects launced for water quality management</h1>
+    
+    <div id="body-projects">
+        <div id="project1" class="project">
+            <img src="https://www.sie-see.org/wp-content/uploads/2021/06/EYPW-WWQA-graphics.png" alt=""><br>
+            <a href="https://www.unep.org/explore-topics/water/what-we-do/improving-and-assessing-world-water-quality-partnership-effort">The World Water Quality Alliance</a><br><hr>
+            <p>Launced by United Nations</p>
+        </div>
+
+        <div id="project2" class="project">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Har_Ghar_Jal_%28Jal_Jeevan_Mission%29_logo.jpg" alt=""><br>
+            <a href="https://jaljeevanmission.gov.in/">Jal Jeevan Mission</a><br><hr>
+            <p>Launced by Government of India</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="footer">
+    <P>Project Made BY:-</P><br>
+    <p>Daman</p>
+    <p>Abhinav Maan</p>
+    <p>Aditya Pratap Singh</p>
+</div>
+
+
+</body>
+</html>
